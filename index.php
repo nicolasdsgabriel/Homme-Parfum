@@ -96,14 +96,14 @@
                                     echo "<h4 class='card-title'>" . $produto['produtoNome'] . "</h4>";
                                     echo "<h5 class='card-text'>" . $produto['produtoMarca'] . "</h5>";
                                     echo "<p class='card-text'>R$ " . $produto['produtoPreco'] . ",00</p>";
-                                    echo "<form action='carrinho.php' method='POST'>";
+                                echo "</div>";
+                                echo "<form action='carrinho.php' method='POST'>";
                                         echo "<input type='hidden' value='" . $produto['produtoImg'] . "' name='imagem_produto[$i]'>";
                                         echo "<input type='hidden' value='" . $produto['produtoNome'] . "' name='produto_nome[$i]'>";
                                         echo "<input type='hidden' value='" . $produto['produtoMarca'] . "' name='produto_marca[$i]'>";
                                         echo "<input type='hidden' value='" . $produto['produtoPreco'] . "' name='produto_preco[$i]'>";
-                                        echo "<input type='submit' class='btn btn-dark' value='Adicionar ao Carrinho' name='adicionar[$i]_$i'>";
+                                        echo "<input type='submit' class='btn btn-warning' value='Adicionar ao Carrinho' name='adicionar[$i]_$i'>";
                                     echo "</form>";
-                                echo "</div>";
                             echo "</div>";
                         echo "</div>";
                     }
@@ -114,9 +114,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
     <style>
+        body{
+            background-color: #F5F5F5; 
+        }
         .card-container {
             display: flex;
-            justify-content: space-between; /* ou outro valor como 'space-around' */
+            justify-content: space-between; 
             margin-bottom: 20px;
         }
 
@@ -125,11 +128,16 @@
         }
 
         .card-fix-height {
-            height: 100%; /* Defina a altura desejada para todos os cards */
+            height: 100%;
         }
         .card-img-top{
             width: 286px;
             height: 401.47px;
+        }
+        .btn{
+            width: 100%;
+            margin-bottom: 2px;
+            background-color: #DAA520;
         }
     </style>
 </body>
