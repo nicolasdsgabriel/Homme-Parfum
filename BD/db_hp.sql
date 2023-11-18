@@ -49,7 +49,7 @@ insert into Produto(produtoId, produtoImg, produtoNome, produtoMarca, produtoPre
 values
 (1, 'img/medusablack.avif', 'MEDUSA BIGGIE BACKPACK',  'VERSACE',  12900.00, 'Preto',null, 'b'),
 (2, 'img/VERSACE.avif', 'VERSACE ALLOVER DENIM TOTE BAG', 'VERSACE', 14100.00, 'Azul com grenã',null, 'b'),
-(3, 'img/allover.avif', 'VERSACE ALLOVER CROSSBODY BAG', 'VERSACE', 7400.00, 'Azul e branco',null, 'b'),
+(3, 'img/dua lipa.avif', 'VERSACE ALLOVER CROSSBODY BAG', 'VERSACE', 7400.00, 'Azul e branco',null, 'b'),
 (4, 'img/masc.avif', 'VERSACE ALLOVER SMALL MESSENGER BAG', 'VERSACE', 7650.00, 'Azul',null, 'b'),
 (5,'img/blacklabel.avif', 'BLACK LABEL OUD', 'MONOTHEME', 314.00, null, 'Amadeirado Medio', 'p'),
 (6, 'img/blazing.avif', 'HE BLAZING MISTER SAM', "PENHALIGON'S", 2300.00, null, 'Amadeirado Marcante', 'p'),
